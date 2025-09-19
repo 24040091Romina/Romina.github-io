@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Fuente y Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(135deg,#e0f7fa 0%,#e1bee7 100%);
+      color: #333;
+    }
+
+    /* Encabezado */
+    header {
+      background: linear-gradient(135deg,#42a5f5,#7e57c2);
+      text-align: center;
+      padding: 40px 20px;
+      color: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.1rem;
+      margin-top: 8px;
+      font-style: italic;
+    }
+
+    /* Contenedor principal */
+    .contenedor {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 15px;
+    }
+
+    section {
+      background: #ffffffcc;
+      margin-bottom: 25px;
+      padding: 25px 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+    section h2 {
+      text-align: center;
+      color: #6a1b9a;
+      margin: 0 0 15px;
+      font-size: 1.8rem;
+    }
+    section p {
+      text-align: center;
+      font-size: 1.05rem;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    /* Galería de gustos */
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 15px;
+    }
+    .item {
+      text-align: center;
+      width: 220px;
+      background: #f3e5f5;
+      border-radius: 12px;
+      padding: 15px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s, background 0.3s;
+    }
+    .item:hover {
+      transform: scale(1.05);
+      background: #ede7f6;
+    }
+    .item img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .item h3 {
+      margin-top: 10px;
+      font-size: 1.1rem;
+      color: #4a148c;
+    }
+
+    /* Redes sociales */
+    footer {
+      background: linear-gradient(135deg,#7e57c2,#42a5f5);
+      color: #ffffff;
+      text-align: center;
+      padding: 25px 15px;
+    }
+    footer h2 {
+      margin: 0 0 15px;
+      font-size: 1.5rem;
+    }
+    .social-icons a {
+      color: #ffffff;
+      margin: 0 12px;
+      font-size: 1.8rem;
+      transition: color 0.3s;
+    }
+    .social-icons a:hover {
+      color: #031e81;
+    }
+
+    /* Responsivo */
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      .item { width: 80%; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Romina Loera</h1>
+    <p>🐱🐞Quien salva una vida, salva al mundo🐱🐞</p>
+  </header>
+
+  <div class="contenedor">
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <p>
+        Me gusta pasar tiempo con mi familia, en especial con mis sobrinos.
+        No soy mucho de salir porque prefiero la tranquilidad del hogar.
+        Me gusta mucho la reposteria, he soñado con poner mi propia reposteria.
+        Tengo un gusto musical muy variado pero últimamente he escuchado lo que es el trap, soy mucho de escuchar
+        musica en ingles y español, en ingles escuho lo que es pop y rock, de vez en cuando el trap en ingles.
+        Me gusta ver series y peliculas, las series que me gustan son coreanas, acción, ficción, romance y las peliculas
+        que me gustan son de terror y romance.
+      </p>
+    </section>
+
+    <section id="gustos">
+      <h2>Lo que me gusta</h2>
+      <div class="galeria">
+        <div class="item">
+          <img src="images/duki.jpg" alt="Música">
+          <h3>Música</h3>
+        </div>
+        <div class="item">
+          <img src="images/pastell.jpeg" alt="Repostería">
+          <h3>Repostería</h3>
+        </div>
+        <div class="item">
+          <img src="images/TUA.jpg" alt="Series">
+          <h3>Series</h3>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <h2>Sígueme en mis redes sociales</h2>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/monserrat.loera.3956" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/monse_loera_/" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+</body>
+</html>
